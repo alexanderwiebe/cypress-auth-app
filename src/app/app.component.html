@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<ng-container *ngIf="!token; else authed">
+  <a
+    href="https://angular-ivy-rnqiz.stackblitz.io/?url=https://angular-ivy-k8tmv8.stackblitz.io"
+    >sign in</a
+  >
+</ng-container>
+<ng-template #authed>
+  <span>congrats signed in</span>
+</ng-template>
